@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Forumlário</title>
+</head>
+<body>
+    <form class="formulario">
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">Inscricão</h1>
+        </header>
+        <main class="conteudo-principal">
+            <div class="conteudo-principal__nome">
+                <label for="nome">Nome:</label>
+                <input placeholder="Ex.: Maria de Oliveira" name="Nome" id="nome" type="text">
+            </div>
+            <div class="conteudo-principal__email">
+                <label for="email">E-mail:</label>
+                <input placeholder="Ex.: maria.oliveira@gmail.com" name="E-mail" id="email" type="email">
+            </div>
+
+            <div class="conteudo-principal__sexo">
+                <label for="sexo">Sexo:</label>
+                <div class="divisao">
+                    <div><input name="Sexo" id="sexo" type="radio" value="masc"><label class="sexo">Masculino</label></div>
+                    <div><input name="Sexo" id="sexo" type="radio" value="fem"><label class="">Feminino</label></div>
+                </div>
+            </div>
+            <div class="conteudo-principal__curso">
+            <label for="">Curso:</label>
+            <select name="Curso" id="curso">
+                <option value="html&css">HTML e CSS</option>
+            </select>
+            </div>
+
+            <div class="conteudo-principal__caixa"">
+                <label for="caixa">Descreva o atendimento especial:</label>
+                <textarea name="Atendimento" id="caixa" cols="30" rows="5"></textarea>
+            </div>
+            <div class="conteudo-principal__deacordo"">
+                <input id="deacordo" type="checkbox">
+                <label for="deacordo">Estou de acordo com o termos de serviço</label>
+            </div>
+            <div class="conteudo-principal__realizar-submissao">
+                <button type="submit">Realizar Inscrição</button>
+            </div>
+            </form>
+        </main>
+    </form>
+</body>
+</html>
